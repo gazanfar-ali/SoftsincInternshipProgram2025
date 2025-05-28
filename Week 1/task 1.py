@@ -1,36 +1,3 @@
-# cli_tools/main.py
-from cli_tools.functions import unit_converter, run_calculator, organize_files, generate_password
-
-def main():
-    while True:
-        print("""
-Choose a tool:
-1. Unit Converter
-2. Calculator
-3. File Organizer
-4. Password Generator
-5. Exit
-""")
-        try:
-            choice = int(input("Enter your choice: "))
-            if choice == 1:
-                unit_converter()
-            elif choice == 2:
-                run_calculator()
-            elif choice == 3:
-                organize_files()
-            elif choice == 4:
-                generate_password()
-            elif choice == 5:
-                break
-            else:
-                print("Invalid choice. Try again.")
-        except ValueError:
-            print("Please enter a number.")
-
-if __name__ == "__main__":
-    main()
-
 # cli_tools/functions.py
 import os, shutil
 from functools import reduce
@@ -83,3 +50,38 @@ def generate_password():
         print("Generated Password:", password)
     except Exception as e:
         print("Error:", e)
+
+# cli_tools/main.py
+# The functions from cli_tools.functions are defined in this cell, so we can call them directly
+# without needing to import from 'cli_tools'.
+# from cli_tools.functions import unit_converter, run_calculator, organize_files, generate_password
+
+def main():
+    while True:
+        print("""
+Choose a tool:
+1. Unit Converter
+2. Calculator
+3. File Organizer
+4. Password Generator
+5. Exit
+""")
+        try:
+            choice = int(input("Enter your choice: "))
+            if choice == 1:
+                unit_converter()
+            elif choice == 2:
+                run_calculator()
+            elif choice == 3:
+                organize_files()
+            elif choice == 4:
+                generate_password()
+            elif choice == 5:
+                break
+            else:
+                print("Invalid choice. Try again.")
+        except ValueError:
+            print("Please enter a number.")
+
+if __name__ == "__main__":
+    main()
