@@ -1,0 +1,79 @@
+# Softsinc Internship Program 2025 – Week 1
+
+This repository documents my progress and projects completed during Week 1 of the **Softsinc Internship Program 2025** as an **AI/ML Internee**.
+
+---
+
+## 📁 Overview
+The internship tasks are organized into modular Python scripts and notebooks across five key topics:
+
+### 🔹 1. Advanced Python & CLI Tools
+- Modular CLI app with:
+  - Unit Converter (using `map` & `lambda`)
+  - Calculator
+  - File Organizer
+  - Password Generator
+- Features: error handling, directory operations, and command-line interactivity.
+
+### 🔹 2. OOP with Real-World Design
+- Class hierarchy: `User → Intern → Mentor`
+- Implements inheritance, polymorphism, encapsulation
+- Simulated Chat App: Users, Managers, Messages with `__str__()` and flow logic
+
+### 🔹 3. File & CSV Handling
+- CSV analysis (missing values, unique entries)
+- Generates reports with timestamps
+- Log file summarizer that detects and counts error entries
+
+### 🔹 4. Pandas Data Handling
+- Titanic dataset used for EDA
+- Tasks include groupby, filtering, data cleaning, visualization
+- 5+ insights explored with visual support via Matplotlib/Seaborn
+
+### 🔹 5. Git & GitHub Pro Workflow
+- Branches: `main` and `dev`
+- Daily commits to `dev`, merged to `main` at week-end
+- Automated linter using **GitHub Actions** (`flake8`) for CI
+
+---
+
+## ✅ Tasks Checklist
+- [x] Modular CLI app built
+- [x] OOP class hierarchy and simulation
+- [x] CSV and log parser with report output
+- [x] Pandas EDA on Titanic dataset
+- [x] Branching, commits, README, and GitHub Action setup
+
+---
+
+## 🖼️ Screenshots
+> _Add your screenshots here_ 
+
+---
+
+## ⚙️ GitHub Actions Setup (CI)
+In `.github/workflows/lint.yml`:
+```yaml
+name: Lint Code Base
+on: [push]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install flake8
+        run: pip install flake8
+      - name: Run flake8
+        run: flake8 .
+```
+
+---
+
+## 👨‍💻 Maintainer
+**Gazanfar Ali**  
+BS AI – UMT Lahore  
+GitHub: [@gazanfarali](https://github.com/gazanfarali)
