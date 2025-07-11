@@ -33,6 +33,9 @@ The goal is to build a web dashboard that:
 📄 requirements.txt # Python dependencies
 📄 README.md # This file
 
+yaml
+Copy
+Edit
 
 ---
 
@@ -43,8 +46,6 @@ The goal is to build a web dashboard that:
 ```bash
 git clone https://github.com/YOUR_USERNAME/sales-dashboard.git
 cd sales-dashboard
-
-
 2️⃣ Install dependencies
 
 bash
@@ -68,3 +69,33 @@ Copy
 Edit
 python dashboard/app.py
 The dashboard will open at http://127.0.0.1:8050
+
+📈 API Endpoints
+Route	Description
+/	Home page
+/total-sales	Returns total sales revenue
+/sales-by-region	Returns revenue grouped by region
+/sales-by-product	Returns revenue grouped by product
+
+📦 Dependencies
+Below are the libraries used in this project:
+
+Library	Why It’s Needed	Version Example
+Flask	Runs the backend REST API that serves the sales data	3.0.0
+pandas	Loads, cleans, and processes the sales data files	2.2.2
+dash	Builds the interactive dashboard web app	2.17.0
+plotly	Provides interactive charts used by Dash	5.22.0
+requests	Lets the dashboard fetch data live from the Flask API	2.31.0
+
+✨ Team
+Team Name: Real-Time Insights Squad
+
+Members:
+
+Gazanfar Ali — Python Developer
+
+Arooj Aslam — Data Scientist
+
+Bilal Ahmed — Data Visualization Engineer
+
+Sara Khan — Team Lead
