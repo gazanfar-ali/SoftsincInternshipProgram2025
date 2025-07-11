@@ -1,6 +1,6 @@
 # Sales Data Schema
 
-This file describes the structure of the `sales_data.csv` or `sales_data.txt`.
+This file describes the structure of the `sales_data.csv`.
 
 ## Columns
 
